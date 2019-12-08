@@ -44,10 +44,17 @@ class linkedList{
     var prevNode;
     var count = 0;
 
-    if(!this.head || pos == 0){
+    if(!this.head){
       this.head = newNode;
       return;
     }
+
+    if(pos == 0){
+      newNode.next = this.head;
+      this.head = newNode;
+      return;
+    }
+
     while(count<pos){
       prevNode = currentNode;
       currentNode = currentNode.next;
