@@ -4,6 +4,23 @@
 
 //Permutation - rearrangement of letters
 
-const palindromePermutation = () =>{
+const palindromePermutation = (input) =>{
+    let oddCount = 0;
+    let permMap = {};
+    for ( let x of input){
+        permMap[x.charCodeAt(0)] += x;
+    }
+
+
+    for (var key in permMap){
+        if((permMap[key].replace('undefined','').length ) %2 != 0)
+            oddCount ++;
+    }
     
+    console.log(oddCount);
+    if (oddCount > 1 )
+        return false;
+    return true;
 }
+
+console.log(palindromePermutation('racecareeeo'));
