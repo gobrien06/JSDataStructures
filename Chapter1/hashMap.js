@@ -1,0 +1,1 @@
+// Multiple ways to use a hashmap in JavaScript.
