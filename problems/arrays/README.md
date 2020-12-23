@@ -1,1 +1,1 @@
-# Chapter 1 - Strings & Arrays 
+# Chapter 1 - Arrays 
